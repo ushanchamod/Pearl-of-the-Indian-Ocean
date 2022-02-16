@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel LK</title>
+  <link rel="icon" type="image/x-icon" href="./HomePage/img/icon/xIc.png">
+  <script src="https://kit.fontawesome.com/1be222d2ee.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="HomePage/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Merriweather+Sans:wght@600&family=Montserrat:wght@200&family=Poppins:wght@200;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spartan:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="allLocationMinAndInternetcheck()">
+
+  <!-- online check -->
+  <div id="onlineCheckMainDiv">
+    <div class="notificationBox">
+      <h3><img src="./HomePage/img/icon/worning.svg" alt="icon"> <br>No Internet</h3>
+      <p>Please Connect Internet</p>
+      <button onclick="window.location.reload();">OK</button>
+    </div><!--notification box-->
+  </div><!--online check main div-->
+
+
+  <!-- Loging pge Code start -->
+
+  <div id="login">
+    <div id="main-loging-div">
+
+      <div id="close-button" onclick="closeLoging()">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+      </div>
+
+      <div class="loging-pagr-tital">
+        <h2>Login</h2>
+      </div><!--liging page titale-->
+        
+      <div id="loging-form">
+        <form name="myForm">
+          <input id="IDuserName" type="text" name="userName" placeholder="Enter Username" required>
+          <input type="password" name="password" placeholder="Enter password" id="passwordFeeld" required>
+
+        </form>
+        <button onclick="logIn()">Login</button>
+
+        <p class="create-account">If you haven't user account <br>
+        <span class="create-account-hear">Create an accont</span> </p>
+      </div><!--loging form end-->
+
+    </div><!--main loging div-->
+  </div><!--login-->
+
+
+  <!-- Smal loging details page -->
+
+  <div id="loging-details-main-div">
+
+    <div class="userIconInDetailsPage">
+      <i class="far fa-user"></i>
+    </div><!--userIconInDetailsPage-->
+    
+    <div class="loging-details-name">
+      <p id="loging-details-display-name">Name</p>
+    </div><!--loging-details-name-->
+
+    <button id="closeButtonIndetails" onclick="closeDetailsTab()">Ok</button>
+
+  </div><!--loging-details-main-div-->
+
+
+
+
+  <!-- Loging pge Code End -->
+
+  <!-- top-bar -->
+
+  <div id="main-fist-div">
+    <div id="Backgroundimage"></div>
+    
+    <div class="background-color">
+      
+      <div id="top-bar">        
+        <nav id="nav-item">
+          <ul>
+              <a><p>Travel LK</p></a>
+            <a><li>Home</li></a>
+            <a href="./Travel/travel.html"><li>Travel</li></a>
+            <a href="./news/news.html"><li>News</li></a>
+            <a href="./ContactUs/contact.html"><li>Contact Us</li></a>
+            <a href="./About/about.html"><li>About</li></a>
+          </ul>
+
+          <ol class="ul-write">
+            <a href="#"><li><i class="fas fa-user" onclick="logingDitails()" style="display: none;" id="logingDitailsUser"></i>
+              
+            <span onclick="showLoging()" id="log-span">Login</span>
+
+            <span style="display: none;" onclick="logingDitails()" id="logingDitailsName">0</span>
+          </li></a>
+
+            <a onclick="window.location.reload()" style="display: none;" id="exit"><li><i class="fas fa-sign-out-alt"></i></li></a>
+          </ol>
+
+        </nav>
+      </div><!--top-bar-->
+
+
+      <div id="main-tital">
+
+        <div class="search">
+          <h4>Pearl of the Indian Ocean</h4>
+          <p>Sri Lanka</p>
+          <input id="serch-input" type="text" placeholder="Enter Keyword">
+          <a><button onclick="search()">Search</button></a>
+        </div><!--search-->
+
+      </div><!--main-taitale-->
+    </div><!--background-color-->
+  </div><!--main-fist-div-->
+
+
+<!-- ------Second part in web page -->
+ 
+  <div id="main-second-div">
+    <div id="backgrounEdit"></div>
+
+    <h2>Why You Should Visit Sri Lanka</h2>
+
+    <div class="mainContant">
+      <div class="olList">
+
+        <ol>
+
+          <!-- climate -->
+          <li class="climate">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/001.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>A tropical climate all year round</h3>
+                <div class="pharagraph">
+                  <p>In Sri Lanka, At any given time, travellers can expect a sunny climate somewhere on the island. The southwest monsoon is between May and July, which leaves the north rain-free, and the northeast monsoon is between October and January, which leaves the south ready to be explored.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+          </li>
+
+          <!-- food -->
+          <li class="food">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/002.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Amazing food</h3>
+                <div class="pharagraph">
+                  <p>Sri Lanka is blessed with a distinctive cuisine flavoured with exotic spices. The famed rice and curry spread includes an intense and fragrant lentil and chicken or fish curry with rice and vegetables on the side. The fish curry is highly recommended by locals.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- animals -->
+          <li class="animals">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/003.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Rare land animals</h3>
+                <div class="pharagraph">
+                  <p>Sri Lanka has 26 national parks and two marine parks. The most well known, Yala National Park, has the highest density of leopards in the world, 215 species of bird, mugger crocodiles and other reptiles, while the coastline bordering the park is a nesting spot for five species of sea turtle.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- beache -->
+          <li class="beache">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/004.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Glorious beaches</h3>
+                <div class="pharagraph">
+                  <p>Sri Lanka is probably the only place in the world where you can view a species of both the world’s largest land mammal, the elephant, and the largest water mammal, the blue whale. Five species of whale, including the blue whale and the minke whale, are regularly seen in the seas off Kalpitiya. If you’re lucky.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- dolphin -->
+          <li class="dolphin">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/005.jpg" alt="iamge">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Whales and dolphins</h3>
+                <div class="pharagraph">
+                  <p>Sri Lanka is probably the only place in the world where you can view a species of both the world’s largest land mammal, the elephant, and the largest water mammal, the blue whale. Five species of whale, including the blue whale and the minke whale, are regularly seen in the seas off Kalpitiya. If you’re lucky, you’ll be able to spot spinner dolphins too.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- hiking -->
+          <li class="hiking">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/006.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Gorgeous landscapes and hiking trails</h3>
+                <div class="pharagraph">
+                  <p>Sri Lanka’s abundance of flora and fauna means it has beautiful nature trails, with stunning vistas and waterfalls, misty mountains rising into the clouds, hillsides covered with paddy fields and tea estates and the occasional peacock or deer crossing your path.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- surfing -->
+          <li class="surfing">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/007.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Super surfing</h3>
+                <div class="pharagraph">
+                  <p>Easy access to the waves, the great number of sand-bottom breaks and the ever-consistent swells have made Sri Lanka a popular surfing destination. Arugam Bay is arguably the best spot for surfing and regularly hosts international competitions such as Red Bull Ride My Wave.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <!-- Culture -->
+          <li class="Culture">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/008.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>Millennia of Buddhist heritage</h3>
+                <div class="pharagraph">
+                  <p>Buddhism has played a key role here over the centuries and there are several ancient temples dotted throughout Sri Lanka. These ancient places of worship often feature inspiring architecture and designs that were far ahead of their times.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+          <li class="Cultural">
+
+            <div class="liOutDiv">
+              <div class="img">
+                <img src="./HomePage/img/WhyInportentImg/009.jpg" alt="image">
+              </div><!--image-->
+
+              <div class="contant">
+                <h3>The Cultural Triangle</h3>
+                <div class="pharagraph">
+                  <p>The Cultural Triangle is a trove of ancient cities, relics and religious monuments showcasing early Sri Lankan civilisation. The triangle consists of the area between three cities - Kandy, Anuradhapura and Polonnaruwa.</p>
+                </div><!--pharagraph-->
+
+              </div><!--contant-->
+            </div><!--liOutDiv-->
+
+          </li>
+
+        </ol>
+
+
+
+
+
+      </div>
+    </div><!--main containt-->
+  </div><!--main-second-div-->
+
+
+
+ <!--Tird part in web page-->
+
+<div id="main-third-div">
+
+  <div id="minMaxIcon">
+    <i class="fas fa-angle-up" style="display: none;" id="min" class="minButton" onclick="minFunction()"></i>
+
+      <i class="fas fa-angle-down" id="max" class="maxButton" onclick="maxFunction()"></i>
+  </div>
+
+  <h1>Traveling location</h1>
+
+  <div id="filter" onclick="maxFilter()">
+    <div id="filter-Max-Button">
+      <i class="fas fa-filter"></i>
+    </div>
+  </div>
+
+  <div id="filter-big">
+    <i class="fas fa-window-close" onclick="filterBigClise()"></i>
+    <form>
+      <div id="province" class="options">
+        <label>Select Provinces</label> <br>
+        <select id="selectBox" onchange="searchSelect()">
+          <option selected value="notSelect">Select Provinces Here</option>
+          <option value="centralprovince">Central Province</option>
+          <!-- <option value="easternprovince ">Eastern Province</option> -->
+          <option value="northernprovince">Northern Province</option>
+          <option value="southernprovince">Southern Province</option>
+          <option value="westernprovince">Western Province</option>
+          <option value="northwesternprovince">North Western Province</option>
+          <option value="northcentralprovince">North Central Province</option>
+          <option value="uvaprovince">Uva Province</option>
+          <option value="sabaragamuwaprovince">Sabaragamuwa Province</option>
+        </select>
+      </div>
+      <div id="district" class="options">
+        <label>Select Districts</label> <br>
+        <select id="selectBox2" onchange="searchSelectDis()">
+          <option selected value="notSelect">Select Districts Here</option>
+          <option value="kandy">Kandy</option>
+          <option value="mathale">Mathale</option>
+          <option value="nuwaraeliya">Nuwara Eliya</option>
+          <option value="jaffna">Jaffna</option>
+          <option value="galle">Galle</option>
+          <option value="matara">Matara</option>
+          <option value="hambantota">Hambantota</option>
+          <option value="colombo">Colombo</option>
+          <option value="kurunegala">Kurunegala</option>
+          <option value="anuradhapura">Anuradhapura</option>
+          <option value="polonnaruwa">Polonnaruwa</option>
+          <option value="badulla">Badulla</option>
+          <option value="ratnapura">Ratnapura</option>
+          <!-- <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option> -->
+        </select>
+      </div>
+    </form>
+
+    <button onclick="clearechoose()">Show All Locations</button>
+    
+  </div>
+
+  <!-- 01 CENTER PROVINCE -->
+
+  <div id="001a" class="kandy kandi kandysrilanka centralprovince   visitpinnewalaelephantorphanage pinnewalaelephantorphanage pinnewala pinnawala pinnavala   pinnevla elephant orphanage ali alianathagaraya   pinnawalalianathagaraya pinnavelaalianathagaraya">
+
+    <div class="js-main">
+
+
+      <p class="class-name">Visit Pinnewala Elephant Orphanage</p>
+
+      <div class="discription-and-date-time-div" id="discriptionAndDateTime">
+
+      <img src="./HomePage/img/LocationImg/pinnawala.jpg" alt="image">
+
+        <p class="class-desctiption">&ensp;&ensp;&ensp; The   timings of the Pinnawala Elephant Orphanage are from 8:30   am to 5:30 pm. However, the best time to visit the popular  sanctuary is from 9 am to 1 pm as this is when the   elephants come out to proceed with their daily activities.  The elephants are fed milk at 9 am and 1 pm and given a  bath from 10 am to 12 pm. The remaining hours consist of   watching the elephants interact with each other in their  respective closed boundaries.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Kandy</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <div id="002a" class="kandy kandi kandysrilanka centralprovince   templeofthetooth thetoothtemple toothtemple temple lordbuddha   tooth beautifultemple srilanka daladaperahera dalada perahera   esala perahera esalaperahera">
+
+    <div class="js-main">
+      <p class="class-name">Temple Of The Tooth</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/tooth-temple.jpg" alt="image">
+
+        <p class="class-desctiption">&ensp;&ensp;&ensp; The city  of Kandy earned the title World Heritage Site because of   the presence of a sacred tooth relic temple, Temple of the  Tooth. As the name suggests, the temple houses Lord  Buddha’s tooth which had been transferred all the way from   Kalinga to Kandy. It is now stationed at this temple which  holds 3 pujas a day to honor and venerate Lord Buddha.   However, nobody for the past so many years has actually   seen the relic. This is exactly what draws so many people   to this temple every year. The endless wondering that is  followed by a person’s visit to the temple is not only   thought-provoking but also leads them to so many  conclusions. It is a mystery whether the temple really has   the tooth or was it lost in the midst of the temple’s   colorful history. This is something you will have to  decide after taking a tour of the Temple of the Tooth, for   yourself.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Kandy</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>5:30  am - 8:00 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+
+<!-- i) mathale -->
+
+  <div id="003a" class="centralprovince mathale knuckles mountain range mountainrange knucklesmountainrange mountainrange srilanka  lanka beautiful kanda kandu kadu">
+    <div class="js-main">
+      <p class="class-name">Knuckles Mountain Range</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/knuckles-mountain-range.jpg" alt="image">
+
+        <p class="class-desctiption">&ensp;&ensp;&ensp; Knuckles  Mountain range is an unusual terrestrial landform located  in Matale and Kandy, in Central Province, Sri Lanka. The   range is a World Heritage Conservation Area and is  relatively untouched. The range features 34 peaks, ranging   between 900 metres to 2000 metres. Five of these mountain   peaks make the formation of a clenched fist. <br>
+
+          &ensp;&ensp;&ensp; The name was given by the British,   and the locals call this range 'Dumbara Kanduvetiya',   which means mist-laden mountains. The knuckles Mountain   Range is called so because of its uncanny resemblance to  the fingers of a clenched fist. <br>
+
+          &ensp;&ensp;&ensp; The range, with its grasslands,  rugged peaks, meandering roads and cascading streams and   waterfalls are a vibrant biodiversity zone. Despite   being only 0.03% of the country's area, this zone   consists of 34% of Sri Lanka's endemic vegetation. The  forest cover of the region includes dry evergreen  forests, montane forests, sub-montane forests, dry and   wet savanna etc.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Mathale</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+
+  <!-- ii) mathale -->
+  <div id="004a" class="centralprovince mathale meemure mimure  memure meemura beautiful beautifullocation sri lanka srilanka  cool">
+    <div class="js-main">
+      <p class="class-name">Meemure</p>
+
+      <div class="discription-and-date-time-div" style="display:  display;">
+
+      <img src="./HomePage/img/LocationImg/mimure.jpg" alt="image">
+
+        <p class="class-desctiption">With a population of a mere  400, Meemure is on the border of Matale and Kandy  district, 175 km from Colombo. This remote village has no  cellular connectivity or a direct postal service. The  staple crops here are cardamom, pepper, ginger and paddy.</p>
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Mathale</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <!-- <p class="class-open-time"><span>Open Time : </  span>8:30 am - 5:30 pm</p> -->
+      </div>
+    </div><!--js-main-->
+  </div>
+
+<!-- nuwara eliya -->
+
+  <div id="005a" class="centralprovince nuwara-eliya nuwaraeliya victoriapark wictoriapark victoria wictoria park beautifullocation beautiful beautifull flower love flowers ">
+    <div class="js-main">
+      <p class="class-name">Victoria Park</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">The Queen Victoria Park is situated in middle of the Nuwara Eliya City and It’s one of the must visit destination. This park was named to honor the 60th Jubilee Coronation of Queen Victoria in the year 1897. Originally the park was the research field of Hakgala Botanical Garden. <br> It contains a lot of colorful flowers, and very nice places to enjoy and relax. It also contains a playing area for kids, and a train tour for adults too. This place is famous for bird watching and there are large verities of plants and trees available. victoria park come alive with the flowers specially around March to May, and August to September.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Nuwara Eliya</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>7.00 Am – 7.00 Pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+
+  <div id="006a" class="centralprovince nuwara-eliya nuwaraeliya gregory lake gregary gregarylake gregarylak gregorylake beautifullocation beautiful beautifull love vava wava wawa ">
+    <div class="js-main">
+      <p class="class-name">Gregory Lake</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">When travelers want to know what are the places to visit in Nuwara Eliya, Gregory Lake is the answer. It is a little away from the center of the town. One of the most beautiful places in Nuwara Eliya, one can enjoy rowing and a few games for the children. There is also facilities for houseboat and food stall. It feels like a good great Sunday here. People come here to relax, may have a small picnic and just enjoy the happy vibe. The scenic beauty is also gorgeous. It is one of the most promising hidden places to visit in Nuwara Eliya.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Nuwara Eliya</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 7:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- Northern Province -->
+
+  <!-- jafna -->
+  <div id="007a" class="northern north province northprovince province northernprovince np nallur temple nallurtemple jaffna tamilculture tamil culture cultural tamilcultural">
+    <div class="js-main">
+      <p class="class-name">Nallur Temple</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="image">
+
+        <p class="class-desctiption">Pilgrims from all parts of the world visit Nallur Temple. The prime feature of this Nallur Temple is the golden arch and the extended Gopuram. People visit here mainly to explore this Gopuram. The premise of this temple was built during the eighteenth century. It was in the year 1620 when the Portuguese destroyed the old construction of this building which was constructed during the regime of Tamil Kings. This temple is now considered as the primary place to hold any type of religious festival.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Northern Province | Jaffna</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30 am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <div id="008a" class="northern north province northprovince province gall northernprovince np nallur temple kandarodei temple kandarodeitemple">
+    <div class="js-main">
+      <p class="class-name">Kandarodei Temple</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="#">
+
+        <p class="class-desctiption">This is another amazing destination which should be included in the top places to visit in Jaffna town. This is an ancient Buddhist place in Jaffna which is known for its historical events. This temple is near to Chunnakam and from the Jaffna Town, the distance is only 8 km. The total area of the land is a - acre and the entire structure is painted with ash-colored stone. There are 61 dagobas and some of them have only the foundation. This temple was founded during the Anuradhapura Era and stone scriptures are still there which proves the rich ancient history of this temple.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Northern Province | Jaffna</p>
+
+        <!-- <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p> -->
+
+        <!-- <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p> -->
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- Southern Province -->
+  <!-- gall -->
+  <div id="009a" class="galledutch dutch southernprovince south southprovince south province south southprovince sp gall galle unesco world heritage sites thus deserving a substantial placethe list of places to visit in galle">
+    <div class="js-main">
+      <p class="class-name">Galle Dutch Fort</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="#">
+
+        <p class="class-desctiption">Built several years ago on a massive piece of land in Galle, the Galle Dutch Fort was used by the Portuguese until the Dutch took over it. The British finally sealed the fort as theirs with a lot of re-building and renovation. The unique blends that led to the standing of this monumental structure are now listed under the UNESCO World Heritage Sites thus deserving a substantial place on the list of places to visit in Galle. </p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Southern Province | Galle</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30 am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- Matara -->
+  <div id="0010a" class="southernprovince southprovince south province south southprovince sp star fort starfort mathara mathare good matara">
+    <div class="js-main">
+      <p class="class-name">Star Fort</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">As the name suggests, the Star Fort is constructed in the shape of a star. It was built by the Dutch to prevent attacks from external enemies. The fort is composed out of 6-points forming a star which has a point facing every direction. Each point is bolstered with two large canons. Still protected from all sides by a deep moat, the Star Fort houses a well in the center that offered water within the territories. Additionally, two prisons are also present within the forts premises. It was later occupied by the British to carry out administrative work. The Fort stands even to this day as a remnant of colonialism in Sri Lanka.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Southern Province | Matara</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+
+  <div id="0011a" class="southernprovince southprovince south southprovince sp yala national park yalanationalpark nalpark yale yal yalei nashanal hambantota">
+    <div class="js-main">
+      <p class="class-name">Yala National Park</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">Yala National Park is the second largest national park in Sri Lanka and is one of the most visited national parks in the country. There are 32 recorded species of reptiles and various kinds of birds. It gives the tourist a chance to witness the diverse wildlife of Sri-Lanka.
+        <br>
+        So hop on the jeep and get ready to spot leopards during your safari!</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Southern Province | Hambantota</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- Western Province -->
+
+  <!-- Colombo -->
+  <div id="0012a" class="sri lanka srilanka beautiful westernprovince western lotus tower lotustower colaba locations location nelum nelumkuluna kuluna colombo">
+    <div class="js-main">
+      <p class="class-name">Lotus Tower</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">One of the coolest places to visit in Colombo is also one of the city's newest attractions. The Colombo Lotus Tower is South Asia's tallest freestanding structure (368 meters/1,168 feet), and a trip to the top rewards visitors with unobstructed views across Colombo and the surrounding cityscape and sea.
+        <br>
+        The tower, which houses a lot of telecommunications equipment, has a telecom museum, a shopping mall, a revolving fine dining restaurant, a hotel, and indoor and outdoor observation areas. The tower is also a sight to see from the outside – it's covered in LED lighting and presents seasonal themed lighting displays each night.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Western Province | Colombo</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30  am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- North Western Province -->
+  <!-- Kurunegala -->
+
+  <div id="0013a" class="northwesternprovince northwestern silver temple beautiful religion religion buddhist sri srilanka lanka kurunegala kurunegale">
+    <div class="js-main">
+      <p class="class-name">Silver Temple</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">The temple got its name as the silver temple because it has been built on a rocky outcrop over a mine which is of silver. There are two shrines which are superimposed and partly carved out of the rocks. They make up the Silver Temple which is also known as Ridi Viharaya and it was first built by King Duttu Gemunu in the 2C BCE. There are many caves in here and in one cave there is a long reclining idol of Buddha which has an approximate height of about 9 m. The walls of the temple are covered with paintings which depict divinities. A person could enjoy the spectacular view of the mountain range of Knuckles from dagoba at the top of the hill.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> North Western Province | Kurunegala</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30 am - 5:30 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- North Central Province -->
+  <!-- Anuradhapura -->
+
+  <div id="0014a" class="centralprovince central anuradhapura anuradhapuraya sri srilanka beautiful ruwanvali ruvanvali ruvanvalisaya ruvanwalisaya ruwanwelisaya stuparuwanwelisaya stupa northcentralprovince">
+    <div class="js-main">
+      <p class="class-name">Visit Ruwanwelisaya Stupa</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">It’s considered one of the most sacred areas for Buddhists all over the world. It’s the oldest stupa in Sri Lanka, and was restored in the 20th century and repainted a glorious white. It truly is regarded as a marvel for its architectural qualities. As with a lot of ancient sights in Anuradhapura, you have to be able to appreciate the context in when and what they were built to really appreciate the greatness.
+        <br>
+        If you are unable to do this, then you’ll struggle to find the beauty.
+        <br>
+        This is why getting a guide can sometimes be useful, or using a lonely planet guidebook as you walk around!</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> North Central Province | Anuradhapura</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- polonnaruwa -->
+  <div id="0015a" class="centralprovince central polonnaruwa polonnaruva sri srilanka beautiful theroyalpalace royalpalace royal palace northcentralprovince">
+    <div class="js-main">
+      <p class="class-name">The Royal Palace - Polonnaruwa</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="Photo">
+
+        <p class="class-desctiption">On a visit to the Polonnaruwa Heritage City, the Royal Palace is a never miss attraction on the trip. This Royal Palace of the great King Parakumba (1153-1186 ) had been constructed as a seven-story building. It took the construction around seven years and seven months to be completed. Out of the 7 stories having 1000 rooms, only 3 stories with 55 rooms are remaining. The Palace had been destroyed by an invader from south Indian named “Maga’.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span>North  Central Province | Polonnaruwa</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday to Sunday</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <!-- Uva Province -->
+  <!-- Badulla -->
+  <div id="0016a" class="uvaprovince uva sri srilanka lanka beautiful waterfall diya diyaalla badulla">
+    <div class="js-main">
+      <p class="class-name">Dunhinda Falls</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">Nature lovers and all those tourists wanting to explore some adventure won’t miss the 64-meters high Dunhinda Falls waterfall in Badulla, Sri Lanka. As this popular fall is located at a distance of fewer than 5 kilometers from the city area, tourists plan their visits at ease. Famous amongst all Sri Lankan waterfalls, this waterfall has gained immense popularity. In fact, it is also mentioned in some of the literary works. Local and international travelers ensure that Dunhinda Falls are added in their itineraries. It won’t be wrong to say that a Sri Lankan tour will remain incomplete without visiting this beautiful waterfall.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Uva Province | Badulla</p>
+
+      </div>
+    </div><!--js-main-->
+  </div>
+
+
+  <!-- Sabaragamuwa province -->
+  <!-- Ratnapura -->
+  <div id="0017a" class="sabaragamuwaprovince sabaragamuwa srilanka sri lanka best good gemmologicalmuseum gems gem gemmological museum ratnapura">
+    <div class="js-main">
+      <p class="class-name">Gemmological Museum</p>
+
+      <div class="discription-and-date-time-div">
+
+      <img src="./HomePage/img/LocationImg/for-all.jpg" alt="photo">
+
+        <p class="class-desctiption">Developed by a local gemologist, this museum capsulizes an impressive exotic collection of various natural stones (gemstones, fossils, and artefacts) and is a nice place to explore more about mining gems in Ratnapura. There are many other exhibits like the images, artefacts, and tools that reflect the history and the processes of the established industry. It also includes a store which offers a plethora of gemstones and exotic jewellery for sale. There is a cafeteria also where you are free to refresh yourself, enjoy the beauty of nature and refill your energy. It is located 2.5 km in the centre, off the A4 highway. You should visit the place by keeping ample time in your hands as you will be stunned by the exotic gemstones and artefacts on the display and will definitely want to tour the whole museum.</p>
+
+        <hr>
+
+        <p class="class-location"><span>Location : </span> Central  Province | Ratnapura</p>
+
+        <p class="class-open-date"><span>Open Date : </span>Monday  to Sunday</p>
+
+        <p class="class-open-time"><span>Open Time : </span>8:30 am - 5:00 pm</p>
+      </div>
+    </div><!--js-main-->
+  </div>
+
+  <br><br> <!--Bottum margine-->
+
+</div><!--Main-tird div-->
+
+
+  <!-- --------------------footer-------------------------- -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="firstLine">
+      <ol>
+        <li class="navigation">
+            <a href="index.html">Home</a>
+            <a href="./Travel/travel.html">Travel</a>    
+            <a href="./news/news.html">News</a>   
+            <a href="./ContactUs/contact.html">Contact Us</a>  
+            <a href="./About/about.html">About</a>      
+        </li>
+
+        <li class="phoneNumber">
+          <h3>Tourism Hotline</h3><br>
+          <h4>1912</h4><br><br>
+
+          <h3>Ambulance Service</h3><br>
+          <h4>1990</h4>
+        </li>
+        
+        <!-- <li class="icon">
+          
+        </li> -->
+        <li class="logo">
+          <h1>Travel LK</h1>
+          
+          <p> for your happiness</p>
+        </li>
+      </ol>
+    </div><!--FirstLine-->
+
+    
+    <div class="SecondLine">
+      <div class="icon">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div><!--icon-->
+      
+      <div class="text">
+        <p>&copy; 2021 All Rights Reserved by The Open University Of Sri Lanka</p>
+      </div><!--text-->
+
+      <div class="termsAndCondition">
+        <ol>
+          <a href=""><li>Privacy Policy</li></a>
+          
+          <a href=""><li>Terms & Conditions</li></a>
+        </ol>
+      </div><!--termsAndCondition-->
+    </div><!--SecondLine-->
+  </footer>
+
+
+<script src="./HomePage/Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+  box-sizing: border-box;
+  background-color: rgb(241, 241, 241);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  width: 110px;
+  text-align: center;
+}
+
+
+/* nav bar */
+
+#top-bar{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  z-index: 1500;
+  border-bottom: 1px rgba(255, 255, 255, 0.295) solid;
+}
+
+
+#top-bar nav ul{
+  display: flex;
+  padding: 5px;
+  float: left;
+
+}
+
+#top-bar nav ul li{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 3px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 75px;
+  
+}
+
+#top-bar nav ul li:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+
+
+#top-bar nav ul p{
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  width: 90px;
+  margin-right: 10px;
+}
+
+#top-bar nav ul p{
+  font-weight: bold;
+  font-family: 'The Nautigal', cursive;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 255, 170, 0.993);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+/* body */
+
+#main{
+  position: relative;
+  display: block;
+  min-height: 100vh;
+  background-image: url("../Travel/img/home-background/bac-2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+/* commen style */
+
+#main input{
+  width: 75%;
+  max-width: 50vw;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 6%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.815);
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#main .button{
+  width: 20%;
+  background-color: rgba(247, 0, 255, 0.233);
+  height: 40px;
+  max-width: 20vw;
+}
+
+#main button{
+  position: relative;
+  width: 10%;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 10px;
+  width: 15%;
+  border: none;
+  border-radius: 6px;
+  right: -100px;
+  background-color: rgba(38, 0, 255, 0.349);
+  color: #fff;
+}
+
+#app ol li{
+  display: block;
+  padding: 7px;
+  font-size: 23px;
+  background-color: #ffffff9d;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: rgb(4, 0, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#main .to-do{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  padding: 20px;
+  display: block;
+  margin: auto;
+  border-radius: 7px;
+}
+
+.to-do h1{
+  font-family: 'Pushster', cursive;
+  color: rgb(37, 37, 37);
+  padding: 10px;
+  text-align: center;
+}
+
+#second{
+  background-color: #fff;
+}
+
+#second h2{
+  font-family: 'Pushster', cursive;
+  color: rgb(81, 92, 253);
+  padding: 30px;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  font-size: 40px;
+}
+
+#second ul{
+  display: flex;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 255, 0.774);
+}
+
+#second ul li{
+  width: 100%;
+  padding: 30px;
+  display: block;
+  box-sizing: content-box;
+}
+
+#second table .left-td{
+  color: rgb(27, 27, 27);
+}
+
+#second p{
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(31, 30, 30);
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+#second ul td{
+  padding: 10px;
+}
+
+
+/* footer */
+footer{
+  height: auto;
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  position: absolute;
+  padding-top: 40px;
+}
+
+footer .firstLine{
+  position: relative;
+  width: 95%;
+  display: block;
+}
+
+footer ol{
+  text-align: center;
+  list-style-position: inside;
+  position: relative;
+  
+}
+
+footer ol li{
+  display: inline-block;
+  height: 100%;
+  margin-top: 25px;
+}
+
+footer .navigation{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .navigation a{
+  color: rgb(206, 206, 206);
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer .navigation a:hover{
+  color: red;
+  transition: 0.3s ease;
+}
+
+footer .phoneNumber{
+  position: relative;
+  float: left;
+  margin-left: 100px;
+}
+
+footer .phoneNumber h3,h4{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(206, 206, 206);
+  font-size: 15px;
+}
+
+footer .phoneNumber h4{
+  color: rgb(245, 245, 245);
+}
+
+footer .logo{
+  position: relative;
+  float: right;
+  margin-right: 100px;
+}
+
+footer .logo h1{
+  color: rgb(1,254,170);
+  font-family: 'The Nautigal', cursive;
+  font-size: 75px;
+}
+
+footer .logo p{
+  font-size: 15px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  padding-left: 7px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .SecondLine{
+  position: relative;
+  height: auto;
+  width: 90%;
+  display: block;
+  margin: 50px auto;
+  border-top: 2px white solid;
+  padding-top: 30px;
+}
+
+footer .SecondLine .icon{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon i{
+  font-size: 25px;
+  padding: 30px;
+  padding-bottom: 20px;
+  color: rgb(184, 181, 11);
+}
+
+.SecondLine .text{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(216, 216, 216);
+  font-weight: 500;
+}
+
+.SecondLine .termsAndCondition{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(216, 216, 216);
+}
+
+.SecondLine .termsAndCondition a{
+  padding: 0 15px;
+  color: rgb(216, 216, 216);
+}
+
+

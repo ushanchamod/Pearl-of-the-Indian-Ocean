@@ -1,0 +1,900 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(240, 238, 238);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Merriweather+Sans:wght@600&family=Montserrat:wght@200&family=Poppins:wght@500&family=Roboto+Slab:wght@811&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+#onlineCheckMainDiv{
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  z-index: 1700;
+  display: none;
+  align-content: center;
+  justify-content: center;
+}
+
+#onlineCheckMainDiv .notificationBox{
+  position: relative;
+  top: 10%;
+  width: 500px;
+  height: auto;
+  background-color: rgb(255, 92, 92);
+  border-radius: 10px;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+#onlineCheckMainDiv .notificationBox h3{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+  display: block;
+}
+
+#onlineCheckMainDiv .notificationBox img{
+  width: 100px;
+  color: rgb(255, 255, 255);
+}
+
+#onlineCheckMainDiv .notificationBox p{
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 250px;;
+  text-align: center;
+  font-size: 1em;
+}
+
+#onlineCheckMainDiv .notificationBox button{
+  position: relative;
+  width: 20%;
+  top: 270px;
+  font-size: 0.9em;
+  display: block;
+  margin: 20px auto;
+  background-color: #464646;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+}
+
+#onlineCheckMainDiv .notificationBox button:hover{
+  background-color: #1a1a1a;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Loging page create */
+
+#login{
+  width: 100vw;
+  height: 150vh;
+  position: fixed;
+  z-index: 1;
+  background-color: none;
+  display: none;
+  background-color: rgba(5, 4, 4, 0.61);
+  z-index: 200;
+
+}
+
+#main-loging-div{
+  width: 27%;
+  height: 500PX;
+  background-color: rgba(255, 255, 255, 0.692);
+  margin: 8vh auto;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  background-image: url("./img/logingImage/loging-back.jpg");
+  background-size: cover;
+  box-shadow: -1px 2px 17px 1px rgba(255, 255, 255, 0.267);
+}
+
+#close-button{
+  position: relative;
+  display: block;
+  width: 16px;
+  margin: 7px;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+}
+
+#close-button:hover{
+  color: rgb(61, 232, 255);
+  transition: 0.3s ease;
+}
+
+.loging-pagr-tital{
+  display: block;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#loging-form form input{
+  display: flex;
+  margin: 40px auto;
+  width: 17vw;
+  padding: 10px;
+  font-size: medium;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: 2px rgb(61, 61, 61) solid;
+  background-color: rgba(255, 255, 255,0.5);
+  color: rgb(0, 0, 0);
+}
+
+#loging-form button{
+  display: flex;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+#loging-form button:hover{
+  background-color: #002fff;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.create-account{
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(245, 245, 245);
+  font-weight: bolder;
+}
+
+.create-account-hear{
+  font-size: 14px;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+/* small loging details display */
+
+#loging-details-main-div{
+  width: 12%;
+  height: auto;
+  position: fixed;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  right: 40px;
+  top: 3em;
+  padding: 10px;
+  box-shadow: -1px 2px 17px 5px rgba(255, 255, 255, 0.349);
+}
+
+.userIconInDetailsPage i{
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border: 3px black solid;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.loging-details-name p{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#loging-details-main-div button{
+  padding: 7px 20px;
+  margin-bottom: 10px;
+  border: none;
+  color: black;
+  border-radius: 4px;
+  background-color: aqua;
+}
+
+#loging-details-main-div button:hover{
+  background-color: rgb(4, 49, 253);
+  color: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* End loging page */
+
+#main-fist-div{
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+#main-fist-div #Backgroundimage{
+  background-image: url("./img/bac-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -10;
+  filter: blur(2px) brightness(100%);
+}
+
+#main-fist-div #Backgroundimage img{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.background-color{
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* ---------top-bar----------- */
+
+#top-bar{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  z-index: 1500;
+  border-bottom: 1px rgba(255, 255, 255, 0.295) solid;
+}
+
+
+#top-bar nav ul{
+  display: flex;
+  padding: 5px;
+  float: left;
+
+}
+
+#top-bar nav ul li{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  text-align: center;
+  margin: 0 5px;
+  padding-bottom: 3px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 75px;
+  
+}
+
+#top-bar nav ul li:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+
+#top-bar nav ul p{
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  width: 90px;
+  margin-right: 10px;
+}
+
+#top-bar nav ul p{
+  font-weight: bold;
+  font-family: 'The Nautigal', cursive;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 255, 170, 0.993);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#top-bar ol{
+  float: right;
+  padding: 5px;
+  padding-top: 10px;
+  display: inline-flex;
+  font-size: 13px;
+}
+
+#top-bar ol li:last-child{
+  padding-right: 30px;
+}
+
+#top-bar i{
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+#top-bar i:hover{
+  color: rgb(145, 255, 1);
+  transition: 0.5s ease;
+}
+#top-bar span:hover{
+  color: rgb(145, 255, 1);
+  transition: 0.5s ease;
+}
+
+#log-span, #logingDitailsName{
+  padding: 0px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+#logingDitailsName:hover{
+  color: rgb(145, 255, 1);
+  transition: 0.5s ease;
+}
+
+
+/*---------- taitle----------- */
+
+#main-tital .search{
+  position: relative;
+  display: block;
+  padding: 20px;
+  top: 32vh;
+  left: 50px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+}
+
+#main-tital{
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-family: 'Spartan', sans-serif;
+}
+
+#main-tital h4{
+  font-size: 35px;
+  color: #fff;
+  width: 70vw;
+  max-height: 10vh;
+  position: relative;
+  display: block;
+}
+
+#main-tital p{
+  font-size: 20px;
+  max-width: 100vw;
+}
+
+#main-tital .search input{
+  width: 260px;
+  max-width: 50vw;
+  height: auto;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.342);
+  border: none;
+  font-size: 15px;
+  padding: 7px;
+  color: rgb(255, 102, 0);
+  outline: 1px rgba(255, 255, 255, 0.774) solid;
+  border-radius: 7px;
+}
+
+#main-tital .search input:focus{
+  outline: 2px rgb(0, 225, 255) solid;
+  border: none;
+  transition: 0s ease;
+}
+
+#main-tital .search button{
+  width: 70px;
+  background-color: rgba(251, 75, 75, 1);
+  border: none;
+  font-size: 15px;
+  padding: 9px;
+  color: rgb(252, 252, 252);
+  border-radius: 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#main-tital .search button:hover{
+  background-color: rgb(153, 0, 255);
+  transition: 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+#main-tital .search button:active{
+  background-color: aqua;
+  color: black;
+}
+
+
+/* ----------------SECOND PAGE------------------- */
+
+#main-second-div{
+  height: auto;
+  background-size: cover;
+  background-color: rgba(255, 250, 250, 0.842);
+  display: block;
+  align-content: center;
+}
+
+#main-second-div h2{
+  text-align: center;
+  padding: 50px 0 30px 0;
+  font-family: 'Vujahday Script', cursive;
+  font-size: 60px;
+  color: rgb(0, 0, 255);
+  text-shadow: 2px 2px 8px #464646;
+}
+
+#main-second-div .olList{
+  width: 100%;
+}
+
+#main-second-div .olList ol{
+  text-align: center;
+  list-style-position: inside;
+  width: 100%;
+}
+
+#main-second-div .mainContant .olList ol li{
+  position: relative;
+  display: inline-flex;
+  padding: 20px;
+}
+
+#main-second-div .mainContant{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+#main-second-div .liOutDiv{
+  background-color: rgba(255, 255, 255, 0.363);
+  position: relative;
+  width: 383px;
+  height: 420px;
+  border-radius: 20px;
+  border: 5px rgb(0, 0, 0) solid;
+}
+
+#main-second-div .liOutDiv:hover{
+  box-shadow: 5px 5px 10px rgba(71, 71, 71, 0.534);
+  border: 5px rgb(99, 253, 176) solid;
+  transition: 0.3s ease all;
+}
+
+.liOutDiv .img{
+  display: block;
+  height: 50%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: aqua;
+}
+
+.liOutDiv .img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.liOutDiv .contant{
+  position: relative;
+  display: block;
+  display: block;
+}
+
+.liOutDiv .contant h3{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.liOutDiv .contant p{
+  padding: 10px;
+  color: rgb(41, 41, 41);
+  line-height: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+/* LOCATIONS STYLE */
+
+#main-third-div{
+  width: 100%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.541);
+  background-position: center;
+  background-size: 400px;
+  }
+
+
+#main-third-div h1{
+  text-align: center;
+  padding: 20px;
+  font-family: 'Vujahday Script', cursive;
+  font-size: 90px;
+  color: blue;
+  text-shadow: 2px 2px 8px #464646;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff6e;;
+  margin-bottom: 30px;
+}
+
+.js-main{
+  background-color: rgba(255, 255, 255, 0.521);
+  background-image: url("./img/locationLogo/001.png");
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-size: 1000px;;
+  position: relative;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.384);
+  /* margin-top: 0; */
+}
+#minMaxIcon i{
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  margin-top: 40px;
+  margin-left: 2%;
+  transition: 0.3s ease;
+  display: display;
+  position: absolute;
+  font-size: 400%;
+  padding: 2px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#minMaxIcon i:hover{
+  color: red;
+}
+.js-main .class-name{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  padding: 8px;
+  padding-top: 20px;
+  color: rgb(250, 187, 81);
+}
+
+.js-main img{
+  border: none;
+  border: 5px rgb(255, 255, 255) solid;
+  box-shadow: 2px 2px 8px rgb(7, 7, 7);
+  width: 35vw;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.js-main .discription-and-date-time-div{
+  width: 85%;
+  margin: auto;
+}
+
+.js-main .class-desctiption{
+  font-family: 'Poppins';
+  line-height: 28px;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+  color: rgb(51, 49, 49);
+}
+
+.js-main .class-location{
+  padding: 5px 0;
+  padding-top: 20px;
+  font-size: 17px;
+  color: rgb(47, 136, 209);
+  font-weight: bold;
+}
+.js-main .class-location span{
+  color: rgb(126, 126, 126);
+}
+
+.js-main .class-open-date{
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(221, 74, 72);
+}
+.js-main .class-open-date span{
+  color: rgb(126, 126, 126);
+}
+
+.js-main .class-open-time{
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: rgb(221, 74, 72);
+}
+.js-main .class-open-time span{
+  color: rgb(126, 126, 126);
+}
+
+
+/* location filter style */
+
+
+#filter{
+  position: absolute;
+  z-index: 200;
+}
+
+#filter-Max-Button{
+  background-color: rgb(250, 146, 77);
+  padding: 40px 10px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+#filter-Max-Button i{
+  font-size: 20px;
+  color: #fff;
+}
+
+#filter-Max-Button:hover{
+  background-color: rgb(255, 124, 37);
+  transition: 0.3s ease;
+}
+
+/* big */
+
+#filter-big{
+  display: none;
+  background-color: rgba(0, 225, 255, 0.158);
+  position: relative;
+  z-index: 201;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(71, 71, 71, 0.534);
+  border: 0px #3d3d3d solid;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 1px;
+}
+
+#filter-big form{
+  display: flex;
+  padding: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+#filter-big .options{
+  display: inline-block;
+  
+}
+
+#filter-big label{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+  /* margin: 0 50px; */
+}
+
+#filter-big select{
+  width: 200px;
+  height: auto;
+  border: none;
+  padding: 10px;
+  margin: 10px 15px;
+  margin-left: 0;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  transition: all .25s ease;
+  outline: none;
+  /* margin: 0 50px; */
+  /* background-color: rgba(53, 53, 53, 0.185); */
+}
+
+#filter-big i{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #464646;
+  cursor: pointer;
+}
+
+#filter-big i:hover{
+  color: #000;
+  transition: 0.3s ease;
+}
+
+#filter-big button{
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#filter-big button:hover{
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+
+/* --------footer------------ */
+
+footer{
+  height: auto;
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  position: absolute;
+  padding-top: 40px;
+}
+
+footer .firstLine{
+  position: relative;
+  width: 95%;
+  display: block;
+}
+
+footer ol{
+  text-align: center;
+  list-style-position: inside;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+footer ol li{
+  display: inline-block;
+  height: 100%;
+  margin-top: 25px;
+}
+
+footer .navigation{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .navigation a{
+  color: rgb(206, 206, 206);
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer .navigation a:hover{
+  color: red;
+  transition: 0.3s ease;
+}
+
+footer .phoneNumber{
+  position: relative;
+  float: left;
+  margin-left: 100px;
+}
+
+footer .phoneNumber h3,h4{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(206, 206, 206);
+  font-size: 15px;
+}
+
+footer .phoneNumber h4{
+  color: rgb(245, 245, 245);
+}
+
+
+footer .logo{
+  position: relative;
+  float: right;
+  margin-right: 100px;
+}
+
+footer .logo h1{
+  color: rgb(1,254,170);
+  font-family: 'The Nautigal', cursive;
+  font-size: 5vw;
+}
+
+footer .logo p{
+  font-size: 1vw;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  padding-left: 7px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .SecondLine{
+  position: relative;
+  height: auto;
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-top: 2px white solid;
+  padding-top: 30px;
+}
+
+footer .SecondLine .icon{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon i{
+  font-size: 25px;
+  padding: 30px;
+  padding-bottom: 20px;
+  color: rgb(184, 181, 11);
+}
+
+.SecondLine .text{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(216, 216, 216);
+  font-weight: 500;
+}
+
+.SecondLine .termsAndCondition{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(216, 216, 216);
+}
+
+.SecondLine .termsAndCondition a{
+  padding: 0 15px;
+  color: rgb(216, 216, 216);
+}
+
+
+

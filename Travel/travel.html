@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Travel LK | Travel</title>
+  <link rel="icon" type="image/x-icon" href="../HomePage/img/icon/xIc.png">
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <link rel="stylesheet" href="travel.css">
+  <script src="https://kit.fontawesome.com/1be222d2ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- nav bar -->
+
+<div id="top-bar">        
+  <nav id="nav-item">
+    <ul>
+        <a><p>Travel LK</p></a>
+      <a href="../index.html"><li>Home</li></a>
+      <a href="../Travel/travel.html"><li id="active">Travel</li></a>
+      <a href="../news/news.html"><li>News</li></a>
+      <a href="../ContactUs/contact.html"><li>Contact Us</li></a>
+      <a href="../About/about.html"><li>About</li></a>
+    </ul>
+  </nav>
+</div><!--top-bar-->
+
+<!-- body -->
+<div id="main">
+
+  <div id="app" class="to-do">
+    <h1>Save Location</h1>
+    <div v-if="!isEditing">
+        <input type="text" v-model="todo">
+        <input type="submit" value="Add" @click="storeTodo" class="button">
+    </div>
+    <div v-else>
+        <input type="text" v-model="todo">
+        <input type="submit" value="Update" @click="updateTodo" class="button">
+    </div>
+    <ol>
+        <li v-for="(todo, index) in todos">
+            {{ todo }}
+            <button @click="editTodo(index, todo)">Edit</button>
+            <button @click="removeTodo(index)">Delete</button>
+        </li>
+    </ol>
+  </div><!--todo div-->
+
+</div><!--main-->
+
+
+<div id="second">
+  <h2>Basic Infomation in Sri Lanka</h2>
+
+  <ul>
+    <li>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047271.2999762455!2d78.46169489521603!3d7.851731513542368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1641199489627!5m2!1sen!2slk" width="600" height="450" style="padding-top: 15px; border: none; max-width: 100%; max-height: 70vh;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </li>
+
+    <li>
+      <table>
+        <tr> 
+          <td colspan="2"><p> &emsp; &emsp; Sri Lanka, formerly known as Ceylon, and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, and southeast of the Arabian Sea; it is separated from the Indian subcontinent by the Gulf of Mannar and the Palk Strait. <hr></p></td>
+        </tr>
+
+        <tr>
+          <td class="left-td">Capitals</td>
+          <td>: Colombo, Sri Jayawardenepura Kotte</td>
+        </tr>
+
+        <tr>
+          <td class="left-td">President</td>
+          <td>: Gotabaya Rajapaksa</td>
+        </tr>
+
+        <tr>
+          <td class="left-td">Population</td>
+          <td>: 21.92 million (2020)</td>
+        </tr>
+
+        <tr>
+          <td class="left-td">Currency</td>
+          <td>: Sri Lankan rupee</td>
+        </tr>
+
+        <tr>
+          <td class="left-td">Gross domestic product</td>
+          <td>: 80.71 billion USD (2020)</td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+
+</div>
+  
+
+<!-- Footer -->
+
+<footer>
+  <div class="firstLine">
+    <ol>
+      <li class="navigation">
+          <a href="../index.html">Home</a>
+          <a href="./travel.html">Travel</a>    
+          <a href="../news/news.html">News</a>   
+          <a href="../ContactUs/contact.html">Contact Us</a>  
+          <a href="../About/about.html">About</a>      
+      </li>
+
+      <li class="phoneNumber">
+        <h3>Tourism Hotline</h3><br>
+        <h4>1912</h4><br><br>
+
+        <h3>Ambulance Service</h3><br>
+        <h4>1990</h4>
+      </li>
+    
+      <li class="logo">
+        <h1>Travel LK</h1>
+        <p> for your happiness</p>
+      </li>
+      
+    </ol>
+  </div><!--FirstLine-->
+
+  
+  <div class="SecondLine">
+    <div class="icon">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div><!--icon-->
+    
+    <div class="text">
+      <p>&copy; 2021 All Rights Reserved by The Open University Of Sri Lanka</p>
+    </div><!--text-->
+
+    <div class="termsAndCondition">
+      <ol>
+        <a href="#"><li>Privacy Policy</li></a>
+        
+        <a href="#"><li>Terms & Conditions</li></a>
+      </ol>
+    </div><!--termsAndCondition-->
+  </div><!--SecondLine-->
+</footer>
+
+
+<script src="travel.js"></script>
+</body>
+</html>
